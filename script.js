@@ -1,3 +1,8 @@
+// make variables 
+//make an array for the questions and answers
+// make buttons to submit answers
+// select the right answer
+// keep track of the right questions
 
 
 
