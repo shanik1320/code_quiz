@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: large;
     background-color:lightblue;
 }
 body {
@@ -17,10 +18,42 @@ body {
     width: 500px;
     max-width: 80%;
     background-color: white;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 15px;
     box-shadow: 0 0 10px 2px;
 }
 .btn-grid {
     display: grid;
+    margin: 20px 0;
+    grid-template-columns: repeat(1, auto);
+}
+.btn {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+    background-color: lightblue;
+}
+.btn.correct {
+    background-color: green;
+}
+.btn.wrong {
+    background-color: red;
+}
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 15px 15px;
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide {
+    display: none;
 }
