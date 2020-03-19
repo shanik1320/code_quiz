@@ -1,19 +1,26 @@
-//Variables
-var startbtn = document.getElementById("start-btn");
+var questions = [];
+var score = 0;
+var choices=[];
+var answer=""
 
-// Funtion for the start button
-function startQuiz(){
+var questions = [
+  {
+    title: "What is the symbol for an array",
+    choices: ["()", "[]", "{}"],
+    answer: 1,
+  },
+  {
+    title: "what does JS stand for?",
+    choices: ["Jonh Snow", "jigsaw", "javascript"],
+    answer: 2,
+  },
+  {
+    title: "What are 3 languages of web development?",
+    choices: ["html", "css", "javascript", "all of the above"],
+    answer: 3
+  }
+]
+for (var index = 0; index < questions.length; index++) {
+  Math.floor(Math.random)
 
-  //console.log("started");
-  //hides the start button once is clicked
-  startbtn.classList.add("hide");
 }
-
-
-
-  // for loop to get the questions random
-  //for (var index = 0; index < questions.length; index++) {
-    
-      
-// Making the button work
-  startbtn.addEventListener("click",startQuiz);
